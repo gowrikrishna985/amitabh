@@ -68,8 +68,8 @@ For Software: This project is a fun web application that estimates the height of
 
 
 # Screenshots (Add at least 3)
-![screenshot 1]()
-*Add caption explaining what this shows*
+![screenshot 1](images/Screenshot%202025-08-09%20044921.png)
+*The home page where photo is to be uploaded*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
