@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tree Height Estimator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+</head>
+<body>
+  <div class="content">
+    <h1>🌳 Tree Height Estimator</h1>
+
+    <!-- Display success message -->
+    {% if message %}
+    <div class="message success">
+      ✅ {{ message }}
+    </div>
+{% endif %}
+
+{% if num_amitabhs %}
+  <div class="amitabh-container">
+    <h2>Tree Height: {{ num_amitabhs }} Amitabh Bachchan{{ 's' if num_amitabhs != 1 else '' }}</h2>
+    <div class="amitabh-vertical">
+      {% for i in range(num_amitabhs) %}
+        <img src="{{ url_for('static', filename='img/amitabh.png') }}" alt="Amitabh Bachchan" class="amitabh-img">
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+    <!-- File Upload Form -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="upload-section">
+        <label for="image-upload" class="upload-label">
+          📷 Choose Tree Image
+        </label>
+        <input type="file" id="image-upload" name="image" accept="image/*" required>
+        <span class="file-name" id="file-name-display">No file chosen</span>
+      </div>
+      
+      <button type="submit" class="upload-btn">Calculate Tree Height</button>
+    </form>
+
+    <p style="margin-top: 20px; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+      <em>Upload your tree image to estimate its height</em>
+    </p>
+
+  </div>
+
+  <script>
+    // Display selected file name
+    document.getElementById('image-upload').addEventListener('change', function(e) {
+      const fileName = e.target.files[0]?.name || 'No file chosen';
+      document.getElementById('file-name-display').textContent = fileName;
+    });
+  </script>
+</body>
+</html>
