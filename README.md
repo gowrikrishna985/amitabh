@@ -74,36 +74,72 @@ For Software: This project is a fun web application that estimates the height of
 ![Screenshot2](images/Screenshot%202025-08-09%20044956.png)
 *The photo being uploaded*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3](images/Screenshot%202025-08-09%20045017.png)
+*The final result*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+
+## Workflow of the Tree Height Estimator App
+
+### 1. User Interaction (Frontend)
+- The user visits the web page.
+- The main content is centered and visually appealing, with an animated background.
+- The user sees a file upload form labeled "Choose Tree Image".
+- The user selects an image of a tree and clicks "Calculate Tree Height".
+
+### 2. File Upload (Frontend → Backend)
+- The selected image is sent to the Flask backend via a POST request to the `/upload` route.
+
+### 3. Image Processing & Height Estimation (Backend)
+- The backend receives the image and saves it temporarily.
+- The backend calls the tree analysis logic (in `tree_analyzer.py`) to estimate the tree's height from the image.
+- The estimated height (in meters) is calculated.
+
+### 4. Amitabh Bachchan Conversion (Backend)
+- The backend divides the tree height by 1.88 (Amitabh Bachchan's height in meters) to get the number of "Amitabhs".
+- The number is rounded to the nearest integer for display.
+
+### 5. Result Rendering (Backend → Frontend)
+- The backend deletes the uploaded image after processing.
+- The backend renders the `index.html` template, passing:
+  - The estimated tree height (in meters)
+  - The number of Amitabhs
+  - Any success or error messages
+
+### 6. Result Display (Frontend)
+- The user sees:
+  - A message with the estimated tree height in meters and as "X Amitabh Bachchans".
+  - A vertical stack of Amitabh Bachchan images, one for each "Amitabh" calculated.
+  - (Optionally) The uploaded tree image for visual comparison.
+- The user can upload another image to repeat the process.
+
+
+**Summary:**  
+The app provides a fun, visual way to estimate tree height from an image, expressing the result in both meters and as multiples of Amitabh Bachchan's height, with a modern, animated, and responsive UI.
+
 
 
 # Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+![screenshot 1](images/Screenshot%202025-08-09%20044921.png)
+*The home page where photo is to be uploaded with a text component.*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+![Screenshot2](images/Screenshot%202025-08-09%20044956.png)
+*The photo being uploaded*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+![Screenshot3](images/Screenshot%202025-08-09%20045017.png)
+*The final result*
+
 
 ### Project Demo
 # Video
 [Add your demo video link here]
 *Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Aleesha Sujith: Backend
+- Gowri Krishna: Frontend
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
