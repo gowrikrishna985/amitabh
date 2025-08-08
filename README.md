@@ -71,8 +71,8 @@ For Software: This project is a fun web application that estimates the height of
 ![screenshot 1](images/Screenshot%202025-08-09%20044921.png)
 *The home page where photo is to be uploaded*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](images/Screenshot%202025-08-09%20044956.png)
+*The photo being uploaded*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
