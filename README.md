@@ -68,7 +68,7 @@ For Software: This project is a fun web application that estimates the height of
 
 
 # Screenshots (Add at least 3)
-![](Add screenshot 1 here with proper name)
+![screenshot 1]()
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
