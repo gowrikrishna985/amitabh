@@ -1,54 +1,74 @@
-# amitabh
+# BachchanMeter
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
-
-
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Innovators
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 2: Aleesha Sujith - Muthoot Institute of Technology and Science
+- Member 3: Gowri Krishna - Muthoot Institute of Technology and Science
 
 ### Project Description
-[2-3 lines about what your project does]
+BachchanMeter is a web application that takes in an image of a random tree and gives you it's height in Bachchans! If your tree is 12m tall, then our application measures it in terms of Bachchan units and gives 6.6 Bachchans as output.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+To find the height in Bachchan units for a random tree.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+It uses pixel height to measure the height of the tree approximately and at times with the use of reference objects. Then the height is divided by Big B's height to give you Bachchan units!
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages Used: Python, Javascript, HTML, CSS
+- Frameworks Used: Flask
+- Libraries Used: OpenCV, Flask, Pillow, SciPy
+- Tools used: pip, VS Code
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- No hardware used
 
 ### Implementation
-For Software:
-# Installation
-[commands]
+For Software: 
 
-# Run
-[commands]
+The project uses a Flask backend to handle image uploads and process them using OpenCV.  
+When a user uploads a photo of a tree, the following steps occur:
+
+1. The image is sent to the Flask server via a POST request.
+2. OpenCV reads and processes the image to detect the tree height in pixels.
+3. A fixed reference height for Amitabh Bachchan (1.88m) is used to convert the tree's height into "Bachchan units".
+4. The result is sent back to the frontend as JSON.
+5. JavaScript updates the webpage to display the number of Bachchans tall the tree is.
+
+*Tech stack*:
+- Python (Flask, OpenCV)
+- HTML, CSS, JavaScript
+- GitHub for version control
+  
+## Installation
+
+To set up the project locally, first clone the repository using git clone https://github.com/gowrikrishna985/amitabh.git and navigate into the project folder with cd amitabh.
+It’s recommended to create a virtual environment to keep the project dependencies isolated by running python -m venv venv. Activate the environment with venv\Scripts\activate on Windows or source venv/bin/activate on Mac/Linux.
+
+Once the environment is active, install the required dependencies using pip install flask opencv-python.
+If you have a requirements.txt file, you can install all dependencies in one go with pip install -r requirements.txt.
+
+After installing the dependencies, start the Flask application by running python app.py
+
+## Run
+
+After completing the installation steps, run the Flask server with:
+python app.py
 
 ### Project Documentation
-For Software:
+
+For Software: This project is a fun web application that estimates the height of a tree in units of Amitabh Bachchan’s height (1.88 m). It uses a Python backend powered by Flask and OpenCV for image processing, with a frontend built using HTML, CSS, and JavaScript.
+
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
@@ -61,14 +81,6 @@ For Software:
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 # Build Photos
 ![Components](Add photo of your components here)
