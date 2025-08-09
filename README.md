@@ -132,8 +132,9 @@ The app provides a fun, visual way to estimate tree height from an image, expres
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+<video src="images/Screen Recording 2025-08-09 051245.mp4" controls width="720"
+poster="images/Screenshot%202025-08-09%20045017.png"></video>
+Walkthrough of the Bachchan Meter
 
 
 
